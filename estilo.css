@@ -1,71 +1,83 @@
-
-
 body {
-    background-color: #f4f4f4;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  background-color: #f4f4f4;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 10px;
+  margin: 0;
+  color: #333;
+  /* Removido max-width */
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.foto {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.foto:hover {
+  transform: scale(1.02);
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.voltar {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.voltar a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.voltar a:hover {
+  background-color: #34495e;
+}
+
+
+/* Para telas maiores */
+@media (min-width: 600px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  body {
     padding: 20px;
     max-width: 1000px;
     margin: auto;
-    color: #333;
-    
   }
-  
-
-  h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 40px;
-  }
-  
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .foto {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-    height: 400px; /* altura fixa para alinhar tudo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .foto:hover {
-    transform: scale(1.02);
-  }
-  
-  .foto img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-
-  
-  .voltar {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .voltar a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2c3e50;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
-  
-  .voltar a:hover {
-    background-color: #34495e;
-  }
-  
+}
