@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensagem para meu pai</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Georgia', serif;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      color: #333;
+    }
+    .mensagem {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      white-space: pre-line;
+      margin-bottom: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .link-pagina2 {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .link-pagina2 a {
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+    }
+    .link-pagina2 a:hover {
+      text-decoration: underline;
+    }
+
+    .color-title{
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Uma mensagem especial para meu pai <div class="color-title">Abra no computador</div></h1>
+  <div class="mensagem" id="mensagem"></div>
+
+  <div class="link-pagina2">
+    <a href="pagina2.html">Clique aqui</a>
+  </div>
+
+  <script>
+    const mensagem = `
+
+
+Muito obrigado, meu pai, pelo presente. Agradeço muito pelo apoio que o senhor me deu. 
+Pode não ter significado muita coisa para muitos, mas para mim significou algo muito grande. 
+Um paletó que o senhor me concedeu era algo que eu estava precisando para ir para a igreja, para pregar fora, e não vejo a hora de estar junto do senhor na igreja é meu grande sonho, está eu, senhor, minha mãe e o Bruno. Andados os quatros junto lado a lado dentro da igreja.
+
+O senhor sabe que o senhor também foi gerado no altar, mas até a hora chegar, agradeço por tudo que o senhor fez por mim: pelos abraços, carinhos, puxões de orelha...
+
+Seu filho hoje completa 18 anos. Um novo ciclo se inicia, mas levo comigo tudo o que o senhor me ensinou.  Levo comigo os conselhos, os exemplos e o amor que sempre me mostrou. 
+
+Sei que ainda há muito caminho pela frente, mas é com a base que o senhor me deu que eu sigo firme.
+E se Deus permitir, ainda vamos pregar lado a lado, vestir o mesmo paletó da fé, e viver grandes coisas juntos.
+
+Te amo, pai. Obrigado por ser minha referência, meu espelho, e meu maior exemplo de homem, o senhor sempre me ajudou em tudo, e isso é apenas uma pequena homenagem que eu fiz para o senhor, confesso que demorei para fazer isso daqui, mas valeu o esforço, pois sei que é o orgulho, como muitos dizem lá na loja, "Seu pai deve se orgulhar de você.", e é essa visão que eu quero do senhor, ser um homem de orgulho assim como o senhor é sempre será.
+
+Com amor, Kauã Fidelis 
+
+Ps: Achou que eu tinha esquecido foi? Só estava preparando essa surpresa para o senhor.. Logo abaixo tem outra surpresa`;
+
+    document.getElementById("mensagem").textContent = mensagem;
+  </script>
+
+</body>
+</html>
